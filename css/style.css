@@ -302,7 +302,7 @@ input[type=text],[type=email] {
         text-align: justify;
     }
     
-    .container-inicio {
+    .container-inicio .redes-sociales {
         flex-direction: row;
         margin: auto;
     }
