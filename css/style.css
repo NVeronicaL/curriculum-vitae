@@ -84,7 +84,8 @@ nav li a:hover {
 }
 
 .container-inicio .redes-sociales a i {
-    padding: 50px;
+    padding: 36px;
+    margin: 8px;
     border-radius: 70px;
     background: linear-gradient(180.11deg, #E5E5E5 47.59%, rgba(192, 71, 78, 0) 99.9%);
 }
