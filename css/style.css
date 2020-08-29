@@ -301,7 +301,11 @@ input[type=text],[type=email] {
         box-sizing: border-box;
         text-align: justify;
     }
-    
+
+    .container-inicio .redes-sociales {
+        flex-direction: row;
+        margin: auto;
+    }
     .container-cards {
         display: flex;
         flex-direction: column;
