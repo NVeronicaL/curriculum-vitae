@@ -4,175 +4,237 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portafolio 😃</title>
-        <!--ICONOS-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--ESTILOS CSS-->
-        <link rel="stylesheet" href="css/style.css">
-        <!--Qquery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+        <!--Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
-            <img src="images/logo.png" alt="logo" class="logo">
-                <a href="#" id="menu-icon">
-                    <i class="fa fa-bars"></i>
-                </a>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#portafolio">Portafolio</a></li>
-                    <li><a href="#sobreMi">Sobre Mí</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">VERONICA L.</a>
+                <button class="navbar-toggler" id="ocultarMenu" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a id="e1" class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="e2" class="nav-link" href="#portafolio">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="e3" class="nav-link" href="#sobreMi">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="e4" class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-        </header>
+        </div>
+            
+        <div id="inicio" class="container-inicio">
+            <img id="img-estilo" src="images/home.jpg" alt="">
+            <div class="form-group">
+                <h1 class="titulo">Te interesa la tecnología como a mí ...</h1>
+                <h3 class="subtitulo">te invito a conocer mi portafolio de trabajos hechos</h3>
+                <button  class="btn btn-outline-primary" onclick="irPortafolio()">Ver</button>
+            
+            </div>
+        </div>
 
-        <main>
-            <section id="inicio">
-                <div class="container-inicio" >
-                    <img src="images/perfil-1.jpg" alt="foto perfil">
-                    <div class="parte-2">
-                        <p>Te interesa la tecnología como a mí, te invito a conocer mi portafolio de trabajos hechos</p>
-                        <p>Soy de córdoba</p>
-                        <i class="fa fa-map-marker"></i>
-                        <p>Estudio Computación</p>
-                        <i class="fa fa-desktop"></i>
-                    </div>
-                    <div class="redes-sociales">
-                        <a href="https://www.linkedin.com/in/veronica-lea%C3%B1o/"><i class="fa fa-linkedin-square" style="font-size:48px;color:black"></i></a>
-                        <a href="https://twitter.com/NVeronica_L"><i class="fa fa-twitter-square" style="font-size:48px;color:black"></i></a>
-                        <a href="https://www.instagram.com/nveronical/"><i class="fa fa-instagram" style="font-size:48px;color:black"></i></a>
-                        <a href="https://nveronical.github.io/curriculum-vitae/"><i class="fa fa-github" style="font-size:48px;color:black"></i></a>
+        <div id="portafolio" class="container-portafolio">
+            <h2>Mis Proyectos Personales</h2>
+            <hr style="width: 90%; border-color: white;">
+            <div class="form-group">
+                <!-- <button type="button" class="btn btn-success" class="mostrarProyectos()">Mostrar Proyectos</button> -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/foto-project.jpg" class="card-img-top" alt="proyecto uno">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text"></p>
+                        <a href="https://nveronical.github.io/tienda-peliculas/" class="btn btn-primary">Ver</a>
                     </div>
                 </div>
-            </section>
-    
-            <section id="portafolio">
-                <div class="titulo"><h2>Mis Proyectos ...</h2></div>
-                <div class="container-cards">
-                    <div class="card">
-                        <h4>Proyecto 1</h4>
-                        <img src="images/foto-project.jpg" alt="proyecto uno">
-                        <a class="btn" href="https://nveronical.github.io/tienda-peliculas/">Ver</a>
-                    </div>
-                    <div class="card">
-                        <h4>Proyecto 2</h4>
-                        <img src="images/foto-project.jpg" alt="proyecto dos">
-                        <a class="btn" href="#">Ver</a>
-                    </div>
-                    <div class="card">
-                        <h4>Proyecto 3</h4>
-                        <img src="images/foto-project.jpg" alt="proyecto tres">
-                        <a class="btn" href="#">Ver</a>
-                    </div>
-                    <div class="card">
-                        <h4>proyecto 4</h4>
-                        <img src="images/foto-project.jpg" alt="proyecto cuatro">
-                        <a class="btn" href="#">Ver</a>
 
+                <div class="card" style="width: 18rem;">
+                    <img src="images/foto-project.jpg" class="card-img-top"alt="proyecto dos">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text"></p>
+                        <a href="https://app-delivery.netlify.app/" class="btn btn-primary">ver</a>
                     </div>
                 </div>
-            </section>
 
-            <section id="sobreMi">
-                <div class="parte-uno">
-                    <p>“Me considero una persona que búsca la 
+                <div class="card" style="width: 18rem;">
+                    <img src="images/foto-project.jpg" class="card-img-top" alt="proyecto tres">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3</h5>
+                        <p class="card-text"></p>
+                        <a href="https://consultorio-medico.netlify.app/" class="btn btn-primary">ver</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/foto-project.jpg" class="card-img-top" alt="proyecto cuatro">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 4</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sobreMi" class="container-sobreMi">
+            <div class="card text-dark bg-info mb-3" style="max-width: 100rem;">                
+                <div class="card-header">Sobre Mí</div>
+                <div class="card-body">
+                    <p class="card-text">Soy de córdoba <i class="fa fa-map-marker"></i></p>
+                    <p class="card-text">Estudio Computación <i class="fa fa-desktop"></i></p>
+                    <p class="card-text">
+                        Me considero una persona que búsca la 
                         satisfacción del cliente, me organizo
                         para trabajar en equipo, tomo la iniciativa
-                        y sobre todo soy respetuosa ’’.</p>
+                    </p>
                 </div>
-                <div class="cointainer-sobreMi">
-                    <div class="card">
-                        <h4>Sotfware</h4>
-                            <button class="item-0">
-                                <i class="fa fa-angle-down"></i>
-                            </button>
-                        <div class="skill-0">
-                            <p>
-                                Excel, Word, PowerPoint,
-                                SQL, MySQL, MongoDB,
-                                Firebase,Wordpress, Instalación de Sistema
-                                operativo(ubuntu, linux), Postman,
-                                Microsoft SQL Server Management Studio,
-                                Visual Studio, Bootstrap.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4>Lenguajes</h4>
-                        <button class="item-1">
-                            <i class="fa fa-angle-down"></i>
-                        </button>
-                        <div class="skill-1">
-                            <p>
-                                Haskell, C, Octave,
-                                Python, Rubi, Javascript, CSS, HTML,
-                                TypeScript.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4>Frameworks</h4>
-                        <button class="item-2">
-                            <i class="fa fa-angle-down"></i>
-                        </button>
-                        <div class="skill-2">
-                            <p>
-                                Django, Django Rest,Angular, Materialize.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4>Herramientas</h4>
-                        <button class="item-3">
-                            <i class="fa fa-angle-down"></i>
-                        </button>
-                        <div class="skill-3">
-                            <p>
-                                Bitbucket, Gitlab, Trello,
-                                GitHub, MURAL- Microsoft 
-                                AppSource, Figma, Adobe XD, Zeplin. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4>IDE</h4>
-                        <button class="item-4">
-                            <i class="fa fa-angle-down"></i>
-                        </button>
-                        <div class="skill-4">
-                            <p>
-                                Visual Studio Code,
-                                Atom, sublime text 3. 
+            </div>
+            <hr style="width: 90%; border-color: rgb(15, 15, 15);">
+            <h2>Habilidades </h2>
+            <hr style="width: 90%; border-color: rgb(15, 15, 15);">
+            <div class="form-group">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-software" role="tab" aria-controls="v-pills-home" aria-selected="true">Software</a>
+                    <a class="nav-link" id="v-pills-lenguajes-tab" data-toggle="pill" href="#v-pills-lenguajes" role="tab" aria-controls="v-pills-lenguajes" aria-selected="false">Lenguajes</a>
+                    <a class="nav-link" id="v-pills-frameworks-tab" data-toggle="pill" href="#v-pills-frameworks" role="tab" aria-controls="v-pills-frameworks" aria-selected="false">Frameworks</a>
+                    <a class="nav-link" id="v-pills-herramientas-tab" data-toggle="pill" href="#v-pills-herramientas" role="tab" aria-controls="v-pills-herramientas" aria-selected="false">Herramientas</a>
+                    <a class="nav-link" id="v-pills-ide-tab" data-toggle="pill" href="#v-pills-ide" role="tab" aria-controls="v-pills-ide" aria-selected="false">IDE</a>
+                </div>
 
-                            </p>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-software" role="tabpanel" aria-labelledby="v-pills-software-tab">
+                        <div class="card">
+                        <div class="card-header">Sotfware</div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Excel, Word, PowerPoint,
+                                    SQL, MySQL, MongoDB,
+                                    Firebase,Wordpress, Instalación de Sistema
+                                    operativo(ubuntu, linux), Postman,
+                                    Microsoft SQL Server Management Studio,
+                                    Visual Studio, Bootstrap.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-lenguajes" role="tabpanel" aria-labelledby="v-pills-lenguajes-tab">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-header">Lenguajes</div>
+                                <p class="card-text">
+                                    Haskell, C, Octave,
+                                    Python, Rubi, Javascript, CSS, HTML,
+                                    TypeScript.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-frameworks" role="tabpanel" aria-labelledby="v-pills-frameworks-tab">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-header">Frameworks</div>
+                                <p class="card-text">
+                                    Django, Django Rest,Angular, Materialize.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-herramientas" role="tabpanel" aria-labelledby="v-pills-herramientas-tab">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-header">Herramientas</div>
+                                <p class="card-text">
+                                    Bitbucket, Gitlab, Trello,
+                                    GitHub, MURAL- Microsoft 
+                                    AppSource, Figma, Adobe XD, Zeplin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-ide" role="tabpanel" aria-labelledby="v-pills-ide-tab">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-header">IDE</div>
+                                <p class="card-text">
+                                    Visual Studio Code,
+                                    Atom, sublime text 3.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
 
-            <section id="contacto"> 
-                <div class="container-contacto">
-                    <img src="images/contact-foto-1.jpg" alt="foto">
-                    <form action="" method="">
-                        <h3>Formulario de contacto</h3>
-                        <label for="nombre"> Nombre* <br>
-                            <input type="text" value="" placeholder="escriba su nombre" id="nombre" required>
-                        </label>
-                        <br>
-                        <label for="email"> Email* <br>
-                            <input type="email" value="" placeholder="escriba su email" id="email" required>
-                        </label>
-                        <br>
-                        <label for="consulta"> Consulta* <br>
-                        <textarea name="consulta" id="consulta" cols="34" rows="8" placeholder="Escriba su consulta..."  id="consulta" required></textarea>
-                        </label>
-                        <br>
-                            <button class="btn-send">Enviar</button>
-                        <br>
-                    </form>
-                </div>
-            </section>
+        <div id="contacto" class="container-contacto">
+            <div class="form-group form-row col-11">
+                <button id="myTooltip" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="right" title="Ir hacia arriba" onclick="irArriba()">
+                    <svg width="3rem" height="3rem" viewBox="0 0 16 16" class="bi bi-arrow-up-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 11.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- <div class="form-group col-4 justify-content-center"> -->
+            <div class="form-group form-row">
+                <form id="form-consulta" class="form-consulta">
+                    <h4>Formulario de contacto</h4>
+                    <hr style="width: 90%; border-color: #DC7A7A;">
+                    <div class="form-group">
+                        <label for="nameuser">Nombre</label>
+                        <input type="text" class="form-control" id="nameuser" placeholder="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email1">Email</label>
+                        <input type="email" class="form-control" id="email1" placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="consulta">Consulta</label>
+                        <textarea type="text-area" class="form-control" id="consulta" placeholder="Deja tu consulta"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-info form-control" >Enviar</button>
+                    </div>
+                </form>
+                <div class="form-group">
+                    <p>Pódes contactarme atravéz de las redes sociales</p>
+                    <div class="redes-sociales">
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-whatsapp"></i>
+                    </div>
+                </div>   
+            </div>  
+
+        </div>
     </body>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <!-- <hr style="border: 1px solid gray; ">   -->
+        <h6>
+            <!-- &copy; <a href="#" target="_blank">sitio web del propietario</a> -->
+            <a href="#" target="_blank">todos los derechos reservados &copy; 2021 Veronica L.  </a>
+        </h6>
+
+    </footer>
     <script src="codigo.js"></script>
 </html>

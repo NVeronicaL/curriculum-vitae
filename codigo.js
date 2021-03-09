@@ -19,17 +19,58 @@ $(document).ready(function(){
         $(".skill-4").toggle(100);
     });
 
-    $("#menu-icon").click(function(){
-        $(this).next().slideToggle();
-    });
+    // $("#menu-icon").click(function(){
+    //     $(this).next().slideToggle();
+    // });
     
-    $(window).on('resize', function(){
+    // $(window).on('resize', function(){
         
-        if ( $(this).width() > 660 ) {
-            $("nav").show();
-        } else {
-            $("nav").hide(); 
-        }
-    });
+    //     if ( $(this).width() > 660 ) {
+    //         $("nav").show();
+    //     } else {
+    //         $("nav").hide(); 
+    //     }
+    // });
 
 });
+
+
+document.getElementById('e1').addEventListener('click', function() {
+    candado = document.getElementById('ocultarMenu').click()
+    //console.log(candado) 
+});
+
+document.getElementById('e2').addEventListener('click', function() {
+    candado = document.getElementById('ocultarMenu').click()
+    //console.log(candado) 
+    // document.getElementById('navPersonlizado').style.visibility = 'hidden'
+});
+
+document.getElementById('e3').addEventListener('click', function() {
+    candado = document.getElementById('ocultarMenu').click()
+    //console.log(candado) 
+    // document.getElementById('navPersonlizado').style.visibility = 'hidden'
+});
+
+document.getElementById('e4').addEventListener('click', function() {
+    candado = document.getElementById('ocultarMenu').click()
+    //console.log(candado)
+    // document.getElementById('navPersonlizado').style.visibility = 'hidden'
+});
+
+function irArriba() {
+    window.location = 'index.html'
+}
+
+function irPortafolio() {
+    window.location = '#portafolio';
+}
+
+var myTooltipEl = document.getElementById('myTooltip')
+var tooltip = new bootstrap.Tooltip(myTooltipEl)
+
+myTooltipEl.addEventListener('hidden.bs.tooltip', function () {
+    tooltip.show();
+})
+
+tooltip.hide();
